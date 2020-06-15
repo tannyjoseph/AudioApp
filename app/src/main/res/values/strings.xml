@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">AudioApp</string>
+    <string name="recently_played">Recently Played</string>
+    <string name="discover">Discover</string>
+    <string name="new_songs">New Songs</string>
+    <string name="mood">Mood</string>
+    <string name="now_playing">Now Playing:</string>
+    <string name="audio">Audio</string>
+</resources>

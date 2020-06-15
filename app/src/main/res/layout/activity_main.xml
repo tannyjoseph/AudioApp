@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".Activities.AudioPlayerActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/recently_played"
+                android:textSize="30sp"
+                android:fontFamily="@font/roboto_slab_bold"
+                android:textColor="#fff"
+                android:layout_margin="10dp"
+                />
+
+
+
+            <com.takusemba.multisnaprecyclerview.MultiSnapRecyclerView
+                android:id="@+id/first_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal"
+                app:msrv_gravity="start"
+                app:msrv_snap_count="1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/discover"
+                android:textSize="30sp"
+                android:fontFamily="@font/roboto_slab_bold"
+                android:textColor="#fff"
+                android:layout_margin="10dp"
+                />
+
+            <com.takusemba.multisnaprecyclerview.MultiSnapRecyclerView
+                android:id="@+id/second_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal"
+                app:msrv_gravity="center"
+                app:msrv_snap_count="2" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/mood"
+                android:textSize="30sp"
+                android:fontFamily="@font/roboto_slab_bold"
+                android:textColor="#fff"
+                android:layout_margin="10dp"
+                />
+
+
+            <com.takusemba.multisnaprecyclerview.MultiSnapRecyclerView
+                android:id="@+id/third_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal"
+                app:msrv_gravity="center"
+                app:msrv_snap_count="2" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/new_songs"
+                android:textSize="30sp"
+                android:fontFamily="@font/roboto_slab_bold"
+                android:textColor="#fff"
+                android:layout_margin="10dp"
+                />
+
+            <com.takusemba.multisnaprecyclerview.MultiSnapRecyclerView
+                android:id="@+id/fourth_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal"
+                app:msrv_gravity="center"
+                app:msrv_snap_count="2" />
+
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
+
+
